@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - dashboard</title>
+    {% else %}
+    <title>Prototype</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Dashboard: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
